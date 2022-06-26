@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+
+:root{
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+
+    --Very-dark-blue-main-BG: hsl(217, 54%, 11%);
+    --Very-dark-blue-card-BG: hsl(216, 50%, 16%);
+    --Very-dark-blue-line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Outfit";
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--Very-dark-blue-main-BG);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 345px;
+    height: 600px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    background-color: var(--Very-dark-blue-card-BG);
+}
+
+.card-image{   
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background-image: url(/images/image-equilibrium.jpg);
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    border-radius: 12px;
+    cursor: pointer;
+    
+}
+
+.icon{
+    width: 100%;
+    height: 100%;
+    background-color: hsla(178, 100%, 50%,.6);
+    border-radius: 12px;
+    opacity: 0;
+    transition: all 300ms;
+}
+
+.icon .icon-view{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.icon:hover{
+    opacity: 1;
+}
+
+.card-tittle-desc{
+    margin-top: 2rem;
+}
+
+.card-tittle-desc h1{
+    font-size: 1.4rem;
+    color: var(--White);
+    transition: all 300;
+    cursor: pointer;
+}
+
+.card-tittle-desc h1:hover{
+    color: var(--Cyan);
+}
+
+
+.card-tittle-desc p{
+    margin:1rem 0;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.5;
+    color: var(--Soft-blue);
+}
+
+.card-data{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-config{
+    display: flex;
+    align-items: center;
+}
+
+.price-text,.days-text{
+    margin-left: .5rem;
+}
+
+.price-text{
+    color: var(--Cyan);
+    font-weight: 600;
+}
+
+.days-text{
+    color: var(--Soft-blue);
+    font-weight: 300;
+}
+
+
+.line{
+    margin-top: 1rem;
+    width: 100%;
+    height: 1px;
+    background-color: var(--Very-dark-blue-line);
+}
+
+.author{
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.author h2{
+    font-size: 18px;
+    font-weight: 300;
+    margin-left: 1rem;
+    color: var(--Soft-blue);
+}
+
+.author h2 span{
+    color: var(--White);
+    cursor: pointer;
+    transition: all 300ms;
+}
+
+.author h2 span:hover{
+    color: var(--Cyan);
+}
+
+.perfil-pic{
+    width: 40px;
+    border-radius: 50%;
+    border: 2px solid var(--White);
+}
