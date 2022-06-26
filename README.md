@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Site]()
-- Live Site URL: [Site]()
+- Solution URL: [Site](https://www.frontendmentor.io/solutions/nft-card-component-using-flexbox-U2r4POuq_o)
+- Live Site URL: [Site](https://nftcardcomponentfm.netlify.app/)
 
 ## My process
 
